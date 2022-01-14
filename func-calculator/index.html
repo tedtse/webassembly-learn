@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    Module = {};
+    Module.onRuntimeInitialized = function () {
+      // console.log(Module);
+      var express = "0.1+0.2";
+      var result = Module._calculation(allocateUTF8(express));
+      console.log(result);
+    };
+  </script>
+  <script src="./calculator.js"></script>
+</html>

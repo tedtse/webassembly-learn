@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    Module = {};
+    Module.onRuntimeInitialized = function () {
+      // console.log(Module);
+      var calculator = Module._createCalculator();
+      var express = "1+2";
+      var result = Module._handleCalculation(calculator, allocateUTF8(express));
+      console.log(result);
+    };
+  </script>
+  <script src="./calculator.js"></script>
+</html>

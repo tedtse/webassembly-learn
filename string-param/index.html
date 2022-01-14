@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    Module = {};
+    Module.onRuntimeInitialized = function () {
+      var ptr = Module._getString();
+      var str = UTF8ToString(ptr);
+      console.log("From wasm:", str);
+
+      ptr = allocateUTF8("Hello, my name is Han Meimei");
+      Module._printString(ptr);
+      _free(ptr);
+    };
+  </script>
+  <script src="./str-param.js"></script>
+</html>
