@@ -3,7 +3,7 @@
 ```
 cd src/lib
 
-emcc fib.emscripten.cpp -s WASM=2 -s SIDE_MODULE=1 -Os -o fib.wasm
+emcc fib.emscripten.cpp -s WASM=1 -s SIDE_MODULE=1 -Os -o fib.wasm
 ```
 
 ### 生成 exe
